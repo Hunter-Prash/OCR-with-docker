@@ -1,0 +1,11 @@
+activate venv-  venv\Scripts\Activate.ps1
+
+local build-    docker build -t cpu-ocr-project:latest .
+local run-    docker run --rm cpu-ocr-project:latest
+
+cloud build-    
+cloud push to ECR-   
+
+solve package dependency errors by analyzing dependency tree using :   
+    pip install pipdtree 
+    pipdeptree -p <package-name>
